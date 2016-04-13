@@ -75,5 +75,15 @@ noremap <C-N> :Ack <cword><CR>
 " Fancy search
 set incsearch
 set hlsearch
+set ignorecase
 nnoremap <silent> <C-f> :FufCoverageFile<CR>
 noremap <silent> <F2> :FufBufferTag<CR>
+
+" Highlight cursor line
+set cursorline
+hi CursorLine cterm = underline
+set cursorcolumn
+hi CursorColumn cterm=NONE ctermbg=darkgrey 
+
+" Show brackets match
+set showmatch
