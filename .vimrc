@@ -26,6 +26,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'klen/python-mode'
+Plugin 'ctrlpvim/ctrlp.vim'
 
 
 " All of your Plugins must be added before the following line
@@ -45,14 +47,31 @@ filetype plugin indent on    " required
 " "
 "
 " " Other configuration
+" Colour scheme
+colorscheme molokai
+let g:molokai_original = 1
+let g:rehash256 = 1
+
 " Set split position
 set splitbelow
 
 " NerdTree window size
-autocmd VimEnter * NERDTree
-autocmd VimEnter * set winfixwidth
-let g:NERDTreeWinSize=40
+let NERDTreeWinPos='left'
+let NERDTreeWinSize=31
+let NERDTreeChDirMode=1
+nnoremap <silent> <F10> :NERDTree <CR>
+
+" Ycm go to definition/declaration shortcut
+nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
+nnoremap <C-k> :YcmCompleter GoToDeclaration<CR>
+let g:ycm_confirm_extra_conf = 0
+
+" hit enter to cancel searched highlight
+noremap <CR> :nohlsearch<CR>
+noremap <C-N> :Ack <cword><CR>
 
 " Fancy search
 set incsearch
 set hlsearch
+nnoremap <silent> <C-f> :FufCoverageFile<CR>
+noremap <silent> <F2> :FufBufferTag<CR>
