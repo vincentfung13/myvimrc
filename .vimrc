@@ -30,6 +30,7 @@ Plugin 'klen/python-mode'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
+Plugin 'benmills/vimux'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
