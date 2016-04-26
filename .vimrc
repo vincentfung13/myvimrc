@@ -31,7 +31,6 @@ Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
 Plugin 'benmills/vimux'
-Plugin 'Conque-GDB'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -68,6 +67,12 @@ nnoremap <silent> <F10> :NERDTree <CR>
 nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
 nnoremap <C-k> :YcmCompleter GoToDeclaration<CR>
 let g:ycm_confirm_extra_conf = 0
+
+" Jump multiple rows and columns
+nnoremap <Up> 5k
+nnoremap <Down> 5j
+nnoremap <Left> 5h
+nnoremap <Right> 5l
 
 " hit enter to cancel searched highlight
 noremap <CR> :nohlsearch<CR>
