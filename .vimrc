@@ -91,5 +91,8 @@ hi CursorLine cterm = underline
 set cursorcolumn
 hi CursorColumn cterm=NONE ctermbg=darkgrey 
 
+" Disabling pymode-rope
+let g:pymode_rope=0
+
 " Show brackets match
 set showmatch
