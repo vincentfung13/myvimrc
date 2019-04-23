@@ -96,3 +96,7 @@ let g:pymode_rope=0
 
 " Show brackets match
 set showmatch
+
+" Pylint configuration file
+let g:pymode_options_max_line_length=100
+autocmd FileType python set colorcolumn=100
