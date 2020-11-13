@@ -1,3 +1,4 @@
+let g:go_version_warning = 0
 set runtimepath+=~/.vim_runtime
 
 source ~/.vim_runtime/vimrcs/basic.vim
@@ -96,6 +97,8 @@ hi CursorColumn cterm=NONE ctermbg=darkgrey
 
 " Disabling pymode-rope
 let g:pymode_rope=0
+" :set foldmethod=indent
+" :set foldlevelstart=0
 
 " Show brackets match
 set showmatch
