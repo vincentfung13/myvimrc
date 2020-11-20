@@ -26,7 +26,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'klen/python-mode'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/L9'
