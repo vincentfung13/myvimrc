@@ -26,7 +26,6 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'vim-scripts/indentpython.vim'
-Plugin 'klen/python-mode'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/L9'
 Plugin 'vim-scripts/FuzzyFinder'
@@ -64,7 +63,7 @@ set splitbelow
 let NERDTreeWinPos='left'
 let NERDTreeWinSize=31
 let NERDTreeChDirMode=1
-nnoremap <silent> <F10> :NERDTree <CR>
+nnoremap <silent> <F9> :NERDTree <CR>
 
 " Ycm go to definition/declaration shortcut
 nnoremap <C-j> :YcmCompleter GoToDefinitionElseDeclaration<CR>
