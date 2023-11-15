@@ -25,7 +25,7 @@ call vundle#begin()
 " " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'ycm-core/YouCompleteMe'
+Plugin 'vim-scripts/VimCompletesMe'
 Plugin 'vim-scripts/indentpython.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'vim-scripts/L9'
